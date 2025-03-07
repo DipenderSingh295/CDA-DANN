@@ -10,7 +10,7 @@ def read_csv(file_path):
     Attempt to read a CSV file using various delimiters.
     Return a DataFrame if successful; otherwise, return an empty DataFrame.
     """
-    # Pseudocode: try different delimiters
+    # try different delimiters
     # if label column exists:
     #     optionally encode categorical columns
     # return dataframe
@@ -21,7 +21,7 @@ def preprocess_data(file_path):
     Load data using read_csv, convert defect counts to binary labels,
     and retain only numeric columns while removing missing values.
     """
-    # Pseudocode for preprocessing
+    # for preprocessing
     df = read_csv(file_path)
     if df is empty or missing label:
         return empty dataframe
@@ -33,14 +33,14 @@ def normalize_data(df):
     Split the DataFrame into features and label.
     Standardize features and return the normalized DataFrame.
     """
-    # Pseudocode for normalization
+    # for normalization
     return norm_df, scaler
 
 def apply_smote_and_normalize(df):
     """
     Apply SMOTE oversampling to balance classes and then normalize the data.
     """
-    # Pseudocode for applying SMOTE and normalization
+    # for applying SMOTE and normalization
     return norm_df
 
 # --- Similarity Computation ---
@@ -50,7 +50,7 @@ def compute_similarity(source_df, target_df):
       - Structural similarity via correlation matrices and Frobenius norm.
       - Marginal similarity via KS test statistics across features.
     """
-    # Pseudocode for similarity computation
+    # for similarity computation
     return composite_score
 
 # --- DANN Model Definition (Pseudo-code) ---
@@ -62,7 +62,7 @@ class DANN:
           - Label predictor (hidden layer, activation, Sigmoid output)
           - Domain classifier (hidden layer, activation, Sigmoid output)
         """
-        # Pseudocode: Initialize model layers
+        # Initialize model layers
         pass
 
     def forward(self, x, lambda_value):
@@ -72,7 +72,7 @@ class DANN:
           - Get label predictions from the features
           - Apply gradient reversal on features and get domain predictions
         """
-        # Pseudocode: return label_output, domain_output
+        # return label_output, domain_output
         pass
 
 def train_dann(model, source_loader, target_loader):
@@ -80,14 +80,14 @@ def train_dann(model, source_loader, target_loader):
     Train the DANN model using a combination of label prediction loss
     and domain classification loss.
     """
-    # Pseudocode: For each epoch and each batch, compute losses, backpropagate, and update model
+    # For each epoch and each batch, compute losses, backpropagate, and update model
     return trained_model
 
 def predict_dann(model, target_features):
     """
     Predict labels on target data using the trained DANN model.
     """
-    # Pseudocode: Evaluate model and return predictions
+    # Evaluate model and return predictions
     return predictions, probabilities
 
 # --- Main Pipeline ---
