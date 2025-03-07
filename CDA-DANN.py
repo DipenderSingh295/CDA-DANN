@@ -1,4 +1,4 @@
-# Import necessary libraries (pseudo-code)
+# Import necessary libraries
 import os
 import glob
 import pandas as pd
@@ -53,7 +53,7 @@ def compute_similarity(source_df, target_df):
     # for similarity computation
     return composite_score
 
-# --- DANN Model Definition (Pseudo-code) ---
+# --- DANN Model Definition  ---
 class DANN:
     def __init__(self, input_dim):
         """
