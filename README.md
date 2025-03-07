@@ -1,4 +1,3 @@
-# CDA-DANN
 # Details of Datasets
 1 ReLink dataset :"Wu, Rongxin, et al. "Relink: recovering links between bugs and changes." Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering. 2011".
 
